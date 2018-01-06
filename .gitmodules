@@ -1,0 +1,6 @@
+[submodule "https://github.com/millerfield/kicad-library"]
+	path = https://github.com/millerfield/kicad-library
+	url = https://github.com/KiCad/kicad-library.git
+[submodule "kicad-library"]
+	path = kicad-library
+	url = https://github.com/KiCad/kicad-library.git
