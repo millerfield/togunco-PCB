@@ -1,0 +1,217 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:MCU_ST_STM32
+LIBS:togunco-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1700-3302E_SOT23 U?
+U 1 1 5A51E598
+P 1950 2100
+F 0 "U?" H 1800 2225 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 1450 2350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 1950 2325 50  0001 C CNN
+F 3 "" H 1950 2100 50  0001 C CNN
+	1    1950 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP1700-3302E_SOT23 U?
+U 1 1 5A51E611
+P 4400 2100
+F 0 "U?" H 4250 2225 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 3750 2350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4400 2325 50  0001 C CNN
+F 3 "" H 4400 2100 50  0001 C CNN
+	1    4400 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A51E796
+P 2500 2400
+F 0 "C?" H 2525 2500 50  0000 L CNN
+F 1 "100n" H 2525 2300 50  0000 L CNN
+F 2 "" H 2538 2250 50  0001 C CNN
+F 3 "" H 2500 2400 50  0001 C CNN
+	1    2500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A51E831
+P 3900 2400
+F 0 "C?" H 3925 2500 50  0000 L CNN
+F 1 "10n" H 3925 2300 50  0000 L CNN
+F 2 "" H 3938 2250 50  0001 C CNN
+F 3 "" H 3900 2400 50  0001 C CNN
+	1    3900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A51EAB7
+P 2750 2400
+F 0 "C?" H 2775 2500 50  0000 L CNN
+F 1 "10µ" H 2775 2300 50  0000 L CNN
+F 2 "" H 2788 2250 50  0001 C CNN
+F 3 "" H 2750 2400 50  0001 C CNN
+	1    2750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A51EB22
+P 3650 2400
+F 0 "C?" H 3675 2500 50  0000 L CNN
+F 1 "10µ" H 3675 2300 50  0000 L CNN
+F 2 "" H 3688 2250 50  0001 C CNN
+F 3 "" H 3650 2400 50  0001 C CNN
+	1    3650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2100 4100 2100
+Wire Wire Line
+	3900 1800 3900 2250
+Wire Wire Line
+	3650 2100 3650 2250
+Connection ~ 3900 2100
+Wire Wire Line
+	2250 2100 3050 2100
+Wire Wire Line
+	2500 1800 2500 2250
+Wire Wire Line
+	2750 2100 2750 2250
+Connection ~ 2500 2100
+$Comp
+L L L?
+U 1 1 5A51EC9D
+P 3200 2100
+F 0 "L?" V 3150 2100 50  0000 C CNN
+F 1 "L" V 3275 2100 50  0000 C CNN
+F 2 "" H 3200 2100 50  0001 C CNN
+F 3 "" H 3200 2100 50  0001 C CNN
+	1    3200 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2750 2100
+Connection ~ 3650 2100
+$Comp
+L GNDD #PWR?
+U 1 1 5A51EDDF
+P 1950 2850
+F 0 "#PWR?" H 1950 2600 50  0001 C CNN
+F 1 "GNDD" H 1950 2725 50  0000 C CNN
+F 2 "" H 1950 2850 50  0001 C CNN
+F 3 "" H 1950 2850 50  0001 C CNN
+	1    1950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5A51EE01
+P 4400 2850
+F 0 "#PWR?" H 4400 2600 50  0001 C CNN
+F 1 "GNDA" H 4400 2700 50  0000 C CNN
+F 2 "" H 4400 2850 50  0001 C CNN
+F 3 "" H 4400 2850 50  0001 C CNN
+	1    4400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2400 4400 2850
+Wire Wire Line
+	1950 2400 1950 2850
+Wire Wire Line
+	2500 2550 2500 2750
+Wire Wire Line
+	1950 2750 3050 2750
+Wire Wire Line
+	2750 2750 2750 2550
+Connection ~ 2500 2750
+Wire Wire Line
+	3650 2550 3650 2750
+Wire Wire Line
+	3350 2750 4400 2750
+Wire Wire Line
+	3900 2550 3900 2750
+Connection ~ 3900 2750
+Connection ~ 4400 2750
+Connection ~ 1950 2750
+$Comp
+L R R?
+U 1 1 5A51EF29
+P 3200 2750
+F 0 "R?" V 3280 2750 50  0000 C CNN
+F 1 "0" V 3200 2750 50  0000 C CNN
+F 2 "" V 3130 2750 50  0001 C CNN
+F 3 "" H 3200 2750 50  0001 C CNN
+	1    3200 2750
+	0    1    1    0   
+$EndComp
+Connection ~ 2750 2750
+Connection ~ 3650 2750
+$Comp
+L VDD #PWR?
+U 1 1 5A51F29A
+P 2500 1800
+F 0 "#PWR?" H 2500 1650 50  0001 C CNN
+F 1 "VDD" H 2500 1950 50  0000 C CNN
+F 2 "" H 2500 1800 50  0001 C CNN
+F 3 "" H 2500 1800 50  0001 C CNN
+	1    2500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5A51F324
+P 3900 1800
+F 0 "#PWR?" H 3900 1650 50  0001 C CNN
+F 1 "+3V3" H 3900 1940 50  0000 C CNN
+F 2 "" H 3900 1800 50  0001 C CNN
+F 3 "" H 3900 1800 50  0001 C CNN
+	1    3900 1800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
